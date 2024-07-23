@@ -1,0 +1,245 @@
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  ul {
+    flex-direction: column;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2,
+h3, h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p, span, button {
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 0px 60px;
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: hsl(193, 100%, 96%);
+}
+.header .part-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.header .part-one img {
+  width: 200px;
+}
+.header .part-one span {
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 5px #e9e9e9;
+  transition: 0.5s;
+}
+.header .part-one span:hover {
+  color: hsl(208, 11%, 55%);
+}
+.header .part-tow {
+  display: flex;
+  padding: 20px 0;
+}
+.header .part-tow .text {
+  flex-basis: 50%;
+  padding: 20px 0;
+}
+.header .part-tow .text h1 {
+  max-width: 76%;
+}
+.header .part-tow .text p {
+  max-width: 88%;
+  color: hsl(208, 11%, 55%);
+  margin-bottom: 40px;
+}
+.header .part-tow .text span {
+  background-color: hsl(322, 100%, 66%);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 5px #e9e9e9;
+  transition: 0.5s;
+  color: white;
+}
+.header .part-tow .text span:hover {
+  background-color: hsla(322, 100%, 66%, 0.7);
+}
+.header .part-tow .img {
+  flex-basis: 50%;
+}
+.header .part-tow .img img {
+  max-width: 100%;
+}
+
+section {
+  padding: 40px 60px;
+}
+section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  border-radius: 16px;
+  box-shadow: 0 3px 23px #e9e9e9;
+  padding: 20px 50px;
+  position: relative;
+}
+section div .text {
+  flex-basis: 45%;
+  display: block;
+  box-shadow: none;
+}
+section div .text h2 {
+  margin-bottom: 10px;
+}
+section div .text p {
+  color: hsl(208, 11%, 55%);
+  line-height: 23px;
+}
+section div .Img {
+  flex-basis: 40%;
+  box-shadow: none;
+}
+section div .Img img {
+  max-width: 100%;
+}
+section div.lastDiv {
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+section div.lastDiv span {
+  background-color: hsl(322, 100%, 66%);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 5px #e9e9e9;
+  transition: 0.5s;
+  color: white;
+}
+section div.lastDiv span:hover {
+  background-color: hsla(322, 100%, 66%, 0.7);
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(193, 100%, 96%);
+  padding: 40px 60px;
+  display: flex;
+  position: relative;
+}
+footer .one svg {
+  width: 270px;
+  margin-bottom: 20px;
+}
+footer .one p {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+footer .one p::after {
+  content: "";
+  width: 15px;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -26px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .one p:nth-of-type(1) {
+  max-width: 400px;
+  font-size: 11px;
+  line-height: 20px;
+}
+footer .one p:nth-of-type(1)::after {
+  background-image: url("../images/icon-location.svg");
+}
+footer .one p:nth-of-type(2)::after {
+  background-image: url("../images/icon-phone.svg");
+}
+footer .one p:nth-of-type(3)::after {
+  background-image: url("../images/icon-email.svg");
+}
+footer .tow {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .tow ul {
+  flex-direction: column;
+}
+footer .tow ul li {
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .tow ul li:hover {
+  color: hsl(208, 11%, 55%);
+}
+footer .three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .three .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer .three .social svg {
+  width: 30px;
+}
+footer .three svg {
+  width: 10px;
+  cursor: pointer;
+}
+footer .three svg path {
+  transition: 0.5s;
+  fill: white;
+}
+footer .three svg:hover path {
+  fill: hsl(322, 100%, 66%);
+}
+footer .three p {
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=style.css.map */
